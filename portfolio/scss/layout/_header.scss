@@ -1,0 +1,119 @@
+@use '../utils/mixins' as *;
+@use '../base/variables' as *;
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 25px 0 25px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
+}
+
+.navbar-start {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+.navbar-item {
+  padding: 8px;
+  margin: 8px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+
+  &:active {
+    background-color: var(--accent-color);
+    transform: scale(0.95);
+    transition: transform 0.1s ease-in-out;
+  }
+}
+
+.navbar-brand {
+  z-index: 10000;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: calc(48px + 3vw);
+  z-index: 10001;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #ffffff;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham6 .top {
+  stroke-dasharray: 40 172;
+}
+
+.ham6 .middle {
+  stroke-dasharray: 40 111;
+}
+
+.ham6 .bottom {
+  stroke-dasharray: 40 172;
+}
+
+.ham6.active .top {
+  stroke-dashoffset: -132px;
+}
+
+.ham6.active .middle {
+  stroke-dashoffset: -71px;
+}
+
+.ham6.active .bottom {
+  stroke-dashoffset: -132px;
+}
+
+@media screen and (max-width: 1120px) {
+  [data-theme="light"] {
+    .navbar {
+      background-color: #eeefec77;
+      -webkit-backdrop-filter: blur(4px);
+      backdrop-filter: blur(4px);
+    }
+
+  }
+
+  [data-theme="dark"] {
+    .navbar {
+      background-color: rgba(20, 22, 26, 0.7);
+      -webkit-backdrop-filter: blur(4px);
+      backdrop-filter: blur(4px);
+    }
+
+  }
+}

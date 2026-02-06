@@ -1,0 +1,23 @@
+@use '../utils/mixins' as *;
+@use '../base/variables' as *;
+
+.navlogo img,
+#scroll-to-top {
+    width: calc(48px + 2vw);
+    fill: red !important;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 10000;
+
+}
+
+.navlogo img:hover,
+#scroll-to-top:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}

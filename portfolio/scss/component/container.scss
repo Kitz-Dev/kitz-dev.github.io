@@ -1,0 +1,56 @@
+@use '../base/variables' as *;
+@use '../utils/mixins' as *;
+
+
+.content-container {
+    min-height: 100vh;
+    max-width: 60vw;
+    // Desktop width
+    // max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    scroll-snap-align: start;
+}
+
+.title {
+    font-size: calc(1.25rem + 2.5vw);
+    margin-bottom: 16px;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 16px;
+    border-width: 4px;
+    border-radius: 10px;
+    border-bottom-right-radius: 100px;
+    box-shadow: inset -0.08em 0 var(--text-primary), inset -2em 0 var(--accent-color), 0px 0px 0px var(--text-secondary);
+}
+
+#main-title {
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-size: calc(0.75rem + 1.25vw);
+    color: var(--text-secondary);
+
+    #portfolio {
+        color: var(--accent-color);
+    }
+}
+
+section a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.content {
+    color: var(--text-secondary);
+    font-size: calc(0.75rem + 1.25vw);
+}
+
+#works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}

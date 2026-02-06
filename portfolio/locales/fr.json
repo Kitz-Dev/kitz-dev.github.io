@@ -1,0 +1,138 @@
+{
+    "nav": {
+        "navbar_home": "Accueil",
+        "navbar_about": "À propos",
+        "navbar_works": "Projets",
+        "navbar_contact": "Contact",
+        "navbar_experiences": "Expériences",
+        "navbar_skillset": "Compétences"
+    },
+    "title": {
+        "main_title": "Salut",
+        "title_anim": ", moi c'est Romain",
+        "looking_for": "Je recherche une alternance en tant que Concepteur Développeur d'Applications",
+        "main_subtitle": "Voici mon ",
+        "portfolio": "Portfolio",
+        "about_title": "À propos",
+        "experience_title": "Expériences",
+        "skillset_title": "Compétences"
+    },
+    "p": {
+        "about_p": "Après quelques années dans divers secteurs, j'ai décidé de me consacrer entièrement à ma passion grandissante pour le développement. Mon parcours m'a appris la valeur du travail d'équipe, le respect des délais et l'importance de la qualité - des compétences que j'applique désormais dans chaque ligne de code.\n\nFormé aux technologies web modernes (HTML5, CSS3, JavaScript, React, Node.js), je crée des applications web réactives, accessibles et performantes. J'accorde une attention particulière à l'expérience utilisateur et aux meilleures pratiques de développement."
+    },
+    "works": {
+        "projects_title": "Projets",
+        "works_span1": "Pour ma première expérience de Game Jam, j'ai participé à la Ludum Dare 56. Avec huit autres personnes, nous avons créé Snaposaurus, venez voir !",
+        "works_span2": "Un lecteur de musique développé en JavaScript. C'est un projet personnel dans lequel j'ai implémenté une interface moderne avec un design élégant.",
+        "works_span3": "Un logiciel de gestion de connaissances personnelles, nommé Memoria. C'est un projet de groupe réalisé durant mes études sur lequel nous travaillons actuellement.",
+        "works_span4": "Et il y a bien plus à venir...",
+        "learn_more": "En savoir plus",
+        "label_1": "Snaposaurus",
+        "label_2": "SwiftFox Player",
+        "label_3": "Memoria",
+        "label_4": "Plus"
+    },
+    "experience": {
+        "table_where": "Où",
+        "table_what": "Quoi",
+        "table_when": "Quand",
+        "table_being": "En tant que",
+        "exp_1_location": "iD3i",
+        "exp_1_scope": "Stage",
+        "exp_1_period": "De Fév. à Avr. 2026",
+        "exp_1_post": "Développeur Web",
+        "exp_2_location": "AFPA",
+        "exp_2_scope": "Formation",
+        "exp_2_period": "De Sept. 2024 à Fév. 2025",
+        "exp_2_post": "Formation initiale au développement web",
+        "exp_3_location": "LE NOUY",
+        "exp_3_scope": "Travail",
+        "exp_3_period": "De 2021 à Avr. 2024",
+        "exp_3_post": "Menuisier d'atelier"
+    },
+    "footer": {
+        "cta": "Envie de me contacter ?",
+        "link_home": "Accueil",
+        "link_about": "À propos",
+        "link_works": "Projets",
+        "link_contact": "Contact",
+        "link_legals": "Mentions légales",
+        "link_terms": "Conditions d'utilisation",
+        "copyright": "Romain Laimé © 2026"
+    },
+    "form": {
+        "form_title": "Contact",
+        "form_from": "De",
+        "form_name": "Nom",
+        "form_email": "Email",
+        "form_message_title": "Message",
+        "form_message": "Votre message",
+        "form_button": "Envoyer le message"
+    },
+    "nav_case": {
+        "navbar_home": "Accueil",
+        "navbar_about": "À propos",
+        "navbar_works": "Déroulé",
+        "navbar_contact": "Contact",
+        "navbar_experiences": "Résultats",
+        "navbar_skillset": "Insight"
+    },
+    "title_case": {
+        "looking_for": "Un lecteur audio construit avec Javascript",
+        "main_subtitle": "En tant que ",
+        "portfolio": "projet éducatif",
+        "about_title": "À propos",
+        "experience_title": "Déroulé",
+        "skillset_title": "Insight"
+    },
+    "p_case": {
+        "about_p": "J'étais impatient d'en apprendre davantage sur JavaScript et je me suis lancé dans un petit projet : un lecteur audio très simple. Rapidement, ce besoin d'apprendre m'a poussé à approfondir mes connaissances et à ajouter de nombreuses fonctionnalités au projet initial.\n\nC'était le projet idéal pour expérimenter de nouvelles choses et il m'a permis de développer diverses compétences que j'utilise aujourd'hui au quotidien."
+    },
+    "works_case": {
+        "title": "Comment ça s'est passé",
+        "challenges": "Difficultés rencontrées",
+        "key-steps": "Points clef",
+        "phase_1": "Phase 1 : Conceptualisation du lecteur audio, prototypes, configuration des technologies.",
+        "phase_2": "Phase 2 : Développement et conception (un peu comme un bac à sable à ce stade).",
+        "phase_3": "Phase 3 : Correction des bugs et mise en production.",
+        "phase_4": "Apprentissage de nouvelles méthodes de manipulation des données à l'aide des classes JavaScript.",
+        "phase_5": "Refonte du projet initial pour une architecture plus complexe."
+    },
+    "experience_case": {
+        "p": "Malgré mon manque d'expérience dans le domaine, j'ai réussi à créer une application fonctionnelle capable de lire des fichiers audio et d'afficher dynamiquement des commentaires pour l'utilisateur.\n\nJ'ai beaucoup appris grâce à ce projet et j'ai hâte de développer de nouvelles fonctionnalités à l'avenir."
+    },
+    "nav_snapo": {
+        "navbar_home": "Accueil",
+        "navbar_about": "À propos",
+        "navbar_works": "Déroulé",
+        "navbar_contact": "Contact",
+        "navbar_experiences": "Résultats",
+        "navbar_skillset": "Insight"
+    },
+    "title_snapo": {
+        "looking_for": "Un jeu, né en deux jours",
+        "main_subtitle": "Pendant la ",
+        "portfolio": "Ludum Dare 56",
+        "about_title": "À propos",
+        "experience_title": "Déroulé",
+        "skillset_title": "Insight"
+    },
+    "p_snapo": {
+        "about_p": "Avec d'autres membres inexpérimentés, nous avons dû créer un jeu de A à Z en un temps record. Le thème de la Ludum Dare 56 était « Objets à collectionner », nous nous sommes donc répartis les tâches pour créer un jeu sur un enfant qui rêve de dinosaures. Il doit collectionner toutes les images de dinosaures qu'il trouve.\n\nNous avons choisi Unity comme moteur de jeu et, par conséquent, C# comme langage de programmation."
+    },
+    "works_snapo": {
+        "title": "Comment ça s'est passé",
+        "challenges": "Difficultés rencontrées",
+        "key-steps": "Points clef",
+        "phase_1": "Phase 1 : Conceptualisation du jeu, moodboards, configuration commune des technologies.",
+        "phase_2": "Phase 2 : Développement et design.",
+        "phase_3": "Phase 3 : Correction des bugs et mise en production.",
+        "phase_4": "La deadline serrée",
+        "phase_5": "L'apprentissage d'un nouveau langage de programmation (C#).",
+        "phase_6": "La première expérience de travail avec Git.",
+        "phase_7": "La coordination du groupe, spécifiquement entre développeurs et designers."
+    },
+    "experience_snapo": {
+        "p": "Malgré un calendrier serré et le manque d'expérience de certains membres de l'équipe, nous sommes parvenus à créer un jeu fonctionnel et agréable en 48 heures. Le jeu a été très bien accueilli par la communauté Ludum Dare, qui a salué sa créativité, sa musique et son ambiance générale.\n\nCette expérience nous a permis d'acquérir de précieuses compétences en travail d'équipe, en gestion du temps et en prototypage rapide, que nous pourrons mettre en pratique dans nos projets futurs."
+    }
+}

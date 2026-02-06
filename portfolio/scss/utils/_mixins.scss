@@ -1,0 +1,51 @@
+$desktop-width: 1040px;
+$tablet-width: 740px;
+$phone-width: 520px;
+
+@mixin triangle($direction, $color, $size, $position) {
+    @if ($direction =="down") {
+        width: 0;
+        height: 0;
+
+        border: $size solid transparent;
+        border-top-color: $color;
+        border-bottom-width: 0;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width: #{$phone-width}) {
+        @content;
+    }
+}
+
+// Example usage of mixins
+
+// body {
+//     background: red;
+
+//     @include tablet {
+//         background: blue;
+//     }
+// }
+
+// or
+//  body {
+//    background: red;
+// }
+// @include tablet {
+//    body {
+//      background: blue;
+// }

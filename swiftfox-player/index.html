@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- HTML Meta Tags -->
+    <title>SwiftFox Music</title>
+    <meta name="description" content="SwiftFox | Audio Player">
+
+    <!-- Security Meta Tags -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self', font-src 'self'; https://api.project-fox.com;">
+    <meta http-equiv="X-Content-type-options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-policy" content="no-referrer-when-downgrade">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="./">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SwiftFox | Audio Player">
+    <meta property="og:description" content="SwiftFox | Audio Player">
+    <meta property="og:image" content="./img/section/fox.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="https://swiftfox.com">
+    <meta property="twitter:url" content="./">
+    <meta name="twitter:title" content="SwiftFox | Audio Player">
+    <meta name="twitter:description" content="SwiftFox | Audio Player">
+    <meta name="twitter:image" content="./img/section/fox.png">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./fox-corpo-icon.webp">
+
+    <!-- Font preload: 
+         Cette balise preload est CRUCIALE pour les performances:
+         - Elle dit au navigateur de télécharger la police en priorité
+         - "as="font"" indique au navigateur le type de ressource
+         - "type=font/woff2"" précise le format exact
+         - "crossorigin" est nécessaire car les polices sont toujours chargées en CORS
+         -->
+    <link rel="preload" href="./fonts/Alkatra-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+</head>
+
+<body>
+    <main>
+        <section class="library">
+            <div class="library-container" scrollable>
+                <div class="title-container">
+                    <div id="tracklist-return-button-container" class="tracklist-title-button">
+                        <span id="tracklist-return-tooltip" class="tooltip">Return</span>
+                        <svg id="tracklist-return-button" class="logic-button" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                            <use href="./img/sprite.svg#tracklist-return-button"></use>
+                        </svg>
+                    </div>
+
+                    <h2 id="tracklist-title">
+                        Library
+                    </h2>
+
+                    <div id="sort-button-container" class="tracklist-title-button">
+                        <span id="sort-track-tooltip" class="tooltip">Sort</span>
+                        <svg id="sort-down-button" class="logic-button" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <use id="sort-button-img" href="./img/sprite.svg#sort-down-button"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Library Tracks Container -->
+                <div id="library-tracks-container" class="library-tracks-container">
+                </div>
+            </div>
+        </section>
+
+        <section class="music-player">
+            <div id="player-title-container" class="title-container">
+                <h2>
+                    SwiftFox Music
+                </h2>
+            </div>
+            <div id="music-player-container">
+                <h1>
+                    SwiftFox Music
+                </h1>
+
+                <div class="album-cover-container">
+                    <img loading="eager" id="album-cover" class="album-cover" src="./fox-corpo-icon.webp"
+                        alt="album cover">
+                </div>
+
+                <div id="player-logic" class="player-logic">
+                    <div class="button-container">
+                        <span id="shuffle-tooltip" class="tooltip">Shuffle</span>
+                        <svg id="shuffle-button" class="logic-button" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                            <use href="./img/sprite.svg#shuffle-button"></use>
+                        </svg>
+                    </div>
+
+                    <div class="button-container">
+                        <span id="previous-tooltip" class="tooltip">Previous</span>
+                        <svg id="previous-button" class="logic-button" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                            <use href="./img/sprite.svg#previous-button"></use>
+                        </svg>
+                    </div>
+
+                    <div class="button-container">
+                        <span id="play-tooltip" class="tooltip">Pause</span>
+                        <svg id="play-button" class="logic-button" xmlns="http://www.w3.org/2000/svg" width="40"
+                            height="40" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                            <use id="play-button-img" href="./img/sprite.svg#play-button"></use>
+                        </svg>
+                    </div>
+
+                    <div class="button-container">
+                        <span id="next-tooltip" class="tooltip">Next</span>
+                        <svg id="next-button" class="logic-button" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                            <use href="./img/sprite.svg#next-button"></use>
+                        </svg>
+                    </div>
+
+                    <div class="button-container">
+                        <span id="repeat-tooltip" class="tooltip">Repeat</span>
+                        <svg id="repeat-button" class="logic-button" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <use href="./img/sprite.svg#repeat-button"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="progress-bar-container">
+                    <div class="progress-timer-container">
+                        <div class="counts-container">
+                            <span id="song-countup" class="song-timer">-:--</span>
+                        </div>
+
+                        <input type="range" id="progress-bar" class="progress-bar" step="any" max="100"
+                            aria-label="progress bar" />
+
+                        <div class="counts-container">
+                            <span id="song-countdown" class="song-timer">-:--</span>
+                        </div>
+                    </div>
+
+                    <div class="volume-container">
+                        <div class="volume-bar-container">
+                            <input type="range" id="volume-bar" class="volume-bar" value="0.5" step="any" max="1"
+                                aria-label="volume bar" />
+                        </div>
+
+                        <svg id="volume-button" class="logic-button" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <use id="volume-button-img" href="./img/sprite.svg#high-volume"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div id="song-title-wrapper" class="song-title-wrapper">
+                    <div id="song-title-container" class="song-title-container">
+                        <div id="song-title" class="title-display"></div>
+                        <span class="title-display"> - </span>
+                        <div id="song-author" class="title-display"></div>
+                    </div>
+                    <div id="song-title-anim-container" class="song-title-container">
+                        <div id="song-title-anim" class="title-display"></div>
+                        <span class="title-display"> - </span>
+                        <div id="song-author-anim" class="title-display"></div>
+                    </div>
+                </div>
+
+                <audio preload="metadata" crossorigin="use-credentials" id="current-song" type="audio/mpeg"></audio>
+            </div>
+
+        </section>
+
+        <section class="library">
+            <div class="library-container" scrollable>
+                <div id="infos-title-container" class="title-container">
+                    <h2 id="infos-title">
+                        Infos
+                    </h2>
+                </div>
+
+                <!-- Library Tracks Container -->
+                <div id="song-infos-container" class="library-tracks-container">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Script -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+@use '../base/variables' as *;
+@use '../utils/mixins' as *;
+
+aside {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    max-height: auto;
+    padding: 0;
+    z-index: 9000;
+    display: flex;
+    transition: opacity 0.5s ease-in-out;
+    background: var(--bg-primary) no-repeat 12px 0px;
+}
+
+line {
+    stroke: var(--accent-color);
+}
+
+#aside-mirror {
+    right: auto;
+    top: 0;
+    bottom: auto;
+}
+
+.ham {
+    display: none;
+}
+
+.aside-item {
+    width: 24px;
+    background: var(--bg-primary) no-repeat 11px 0px;
+    padding: 10px 0px;
+    position: fixed;
+    right: 124px;
+    z-index: 9999;
+    display: flex;
+    overflow: visible;
+}
+
+#github-aside {
+    top: calc(100vh - 20vh + 60px);
+}
+
+#linkedin-aside {
+    top: calc(100vh - 20vh + 120px);
+}
+
+#menu-expand-right-aside {
+    top: calc(100vh - 20vh - 370px);
+    right: 118px;
+    width: 30px;
+    visibility: hidden;
+}
+
+#menu-expand-right-aside:hover {
+    cursor: pointer
+}
+
+.aside-menu {
+    position: fixed;
+    top: calc(100vh - 20vh - 300px);
+    right: 10px;
+}
+
+.aside-menu-items {
+    display: flex;
+    flex-direction: column;
+}
+
+// Aside mirror
+
+.aside-mirror-wrapper {
+    position: absolute;
+    top: 120px;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .toggle {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 17px;
+    }
+
+    .toggle input {
+        display: none;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0px;
+        left: 100%;
+        right: 0;
+        bottom: 0;
+        background-color: var(--text-secondary);
+        transition: 0.4s;
+        width: 30px;
+        height: 17px;
+        border-radius: 34px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 13px;
+        width: 13px;
+        left: 2px;
+        bottom: 2px;
+        background-color: var(--text-primary);
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+    input:checked+.slider {
+        background-color: var(--accent-color);
+    }
+
+    input:checked+.slider:before {
+        transform: translateX(13px);
+    }
+}
+
+#aside-theme-lang-wrapper {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 50px;
+    margin-left: -15px;
+    display: none;
+}
+
+// Media Queries
+
+@media only screen and (max-width: 1120px) {
+    aside {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    aside.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 8999;
+
+        #menu-expand-right-aside {
+            visibility: visible;
+            top: calc(100vh - 20vh - 250px);
+        }
+    }
+
+    // .aside-mirror-wrapper.active {
+    //     opacity: 1;
+    //     visibility: visible;
+    // }
+
+    .navbar-item {
+        margin: 0 !important;
+    }
+
+    #aside-theme-lang-wrapper {
+        display: flex !important;
+    }
+
+    .ham {
+        display: block;
+    }
+}
+
+@media only screen and (max-height: 940px) {
+    #github-aside {
+        top: calc(100vh - 20vh + 0px);
+    }
+
+    #linkedin-aside {
+        top: calc(100vh - 20vh + 60px);
+    }
+
+    #menu-expand-right-aside {
+        top: calc(100vh - 20vh - 300px);
+    }
+}

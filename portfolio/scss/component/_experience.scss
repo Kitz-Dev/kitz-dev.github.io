@@ -1,0 +1,56 @@
+@use '../base/variables' as *;
+@use '../utils/mixins' as *;
+
+table {
+    border-collapse: collapse;
+    margin-top: 50px;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    font-weight: 200;
+    border-radius: 10px;
+    white-space: wrap;
+    // text-align: center;
+
+    th {
+        font-weight: 200;
+    }
+
+    td {
+        font-size: 1rem;
+        overflow: hidden;
+    }
+
+    .experience-location {
+        font-weight: 1000;
+    }
+
+    .row {
+        border-top: 2px solid var(--accent-color);
+        height: 100px;
+        border-radius: 8px;
+        border-spacing: 10px;
+        padding: 5px;
+        font-weight: 400;
+    }
+
+    .experience-scope-last,
+    .experience-period-last {
+        border-bottom: 2px solid var(--accent-color);
+    }
+
+    @media only screen and (max-width: 670px) {
+        th {
+            font-size: 0.65rem;
+        }
+
+        td {
+            font-size: 0.65rem;
+        }
+
+        .experience-location {
+            font-weight: 1000;
+            font-size: 0.65rem;
+        }
+    }
+}

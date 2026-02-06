@@ -1,0 +1,32 @@
+@use '../base/variables' as *;
+
+
+footer {
+    margin-top: 100px;
+}
+
+.footer-cta {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 64px;
+    margin-top: 10px;
+    padding: 30px;
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    cursor: pointer;
+    width: 100%;
+}
+
+.footer-cta:hover {
+    animation: hover 0.5s infinite alternate;
+}
+
+@keyframes hover {
+    0% {
+        transform: translateY(10px)
+    }
+
+    100% {
+        transform: translateY(-10px)
+    }
+}

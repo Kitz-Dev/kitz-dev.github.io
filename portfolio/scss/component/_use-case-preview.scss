@@ -1,0 +1,37 @@
+@use '../base/variables' as *;
+@use '../utils/mixins' as *;
+
+
+.preview-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px;
+}
+
+.preview-item {
+    margin: 16px;
+    // border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    img {
+        object-fit: cover;
+        width: 300px;
+        height: 200px;
+        display: block;
+    }
+
+    &:hover {
+        transform: scale(1.5);
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    }
+}

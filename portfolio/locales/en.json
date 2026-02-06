@@ -1,0 +1,138 @@
+{
+    "nav": {
+        "navbar_home": "Home",
+        "navbar_about": "About",
+        "navbar_works": "Projects",
+        "navbar_contact": "Contact",
+        "navbar_experiences": "Experiences",
+        "navbar_skillset": "Skillset"
+    },
+    "title": {
+        "main_title": "Hi",
+        "title_anim": ", I'm Romain",
+        "looking_for": "I am looking for an internship as a Software Developer",
+        "main_subtitle": "Here's my ",
+        "portfolio": "Portfolio",
+        "about_title": "About Me",
+        "experience_title": "Experiences",
+        "skillset_title": "Skillset"
+    },
+    "p": {
+        "about_p": "After some years in various sectors, I decided to fully devote myself to my growing passion for development. My journey has taught me the value of teamwork, respect of deadlines and the importance of quality - skillset I now apply in every line of code.\n\nTrained in modern web technologies (HTML5, CSS3, JavaScript, React, Node.js), I create responsive, accessible and high-performance web applications. I pay special attention to user experience and best development practices."
+    },
+    "works": {
+        "projects_title": "Projects",
+        "works_span1": "As of my first game jam experience, I participated in the Ludum Dare 56. Along with eight other people, we've created Snaposaurus, check it out !",
+        "works_span2": "A music player built with JavaScript. This is a personal project in which I've implemented a modern UI with a sleek design.",
+        "works_span3": "Un logiciel de gestion de connaissances personnelles, nommé Memoria. C'est un projet de groupe réalisé durant mes études sur lequel nous travaillons actuellement.",
+        "works_span4": "And there's way more to come...",
+        "learn_more": "Learn More",
+        "label_1": "Snaposaurus",
+        "label_2": "SwiftFox Player",
+        "label_3": "Memoria",
+        "label_4": "Plus"
+    },
+    "experience": {
+        "table_where": "Where",
+        "table_what": "What",
+        "table_when": "When",
+        "table_being": "Being",
+        "exp_1_location": "iD3i",
+        "exp_1_scope": "Stage",
+        "exp_1_period": "From Feb. to Apr. 2026",
+        "exp_1_post": "Web Developer",
+        "exp_2_location": "AFPA",
+        "exp_2_scope": "Internship",
+        "exp_2_period": "From Sept. 2024 to Feb. 2025",
+        "exp_2_post": "Introductory course to web development",
+        "exp_3_location": "LE NOUY",
+        "exp_3_scope": "Work",
+        "exp_3_period": "From 2021 to Apr. 2024",
+        "exp_3_post": "Workshop carpenter"
+    },
+    "footer": {
+        "cta": "Want to get in touch ?",
+        "link_home": "Home",
+        "link_about": "About",
+        "link_works": "Projects",
+        "link_contact": "Contact",
+        "link_legals": "Legals",
+        "link_terms": "Terms of use",
+        "copyright": "Romain Laimé © 2026"
+    },
+    "form": {
+        "form_title": "Contact",
+        "form_from": "From",
+        "form_name": "Name",
+        "form_email": "Email",
+        "form_message_title": "Message",
+        "form_message": "Your message",
+        "form_button": "Send message"
+    },
+    "nav_case": {
+        "navbar_home": "Home",
+        "navbar_about": "About",
+        "navbar_works": "How it went",
+        "navbar_contact": "Contact",
+        "navbar_experiences": "Results",
+        "navbar_skillset": "Insight"
+    },
+    "title_case": {
+        "looking_for": "An audio player built with Javascript",
+        "main_subtitle": "As an educative ",
+        "portfolio": "project",
+        "about_title": "About it",
+        "experience_title": "Results",
+        "skillset_title": "Insight"
+    },
+    "p_case": {
+        "about_p": "I was eager to learn more about Javascript, and I found myself starting this small project of a very simple audio player. After a short while, this need to learn more drove me to dig further and further, adding a bunch of features to the initial project.\n\nIt was the perfect project to try out new things, and it developed a variety of skills that I now use everyday."
+    },
+    "works_case": {
+        "title": "How it went",
+        "challenges": "Challenges ecountered",
+        "key-steps": "Key steps",
+        "phase_1": "Phase 1 : Conceptualization of the audio player, prototypes, common setup of technologies.",
+        "phase_2": "Phase 2 : Development and design. (more like a sandbox at thi point).",
+        "phase_3": "Phase 3 : Bug fix and production launch.",
+        "phase_4": "Learning new ways to manipulate data using Javascript classes.",
+        "phase_5": "Refactor of the simple initial project to a bigger scale architecture."
+    },
+    "experience_case": {
+        "p": "Despite my lack of experience in the domain, I managed to build a functional application which can read audio files and dynamically displays feedback for the user.\n\nI learned lots with this project, and am looking forward to develop new features in the future."
+    },
+    "nav_snapo": {
+        "navbar_home": "Home",
+        "navbar_about": "About",
+        "navbar_works": "How it went",
+        "navbar_contact": "Contact",
+        "navbar_experiences": "Results",
+        "navbar_skillset": "Insight"
+    },
+    "title_snapo": {
+        "looking_for": "A game born in 2 days",
+        "main_subtitle": "During the ",
+        "portfolio": "Ludum Dare 56",
+        "about_title": "About it",
+        "experience_title": "Results",
+        "skillset_title": "Insight"
+    },
+    "p_snapo": {
+        "about_p": "Alongside other experienced, or less experienced members, we had to create a game 'from scratch' in a very short period of time. The theme of this Ludum Dare 56 was 'Collectibles', so we decided to create a game about a child who dreams of dinosaurs. He has to collect every dinosaur pictures he can find.\n\nWe've chosen to use Unity as our game engine, and thus, C# as our programming language."
+    },
+    "works_snapo": {
+        "title": "How it went",
+        "challenges": "Challenges ecountered",
+        "key-steps": "Key steps",
+        "phase_1": "Phase 1 : Conceptualization of the game, moodbards, common setup of technologies.",
+        "phase_2": "Phase 2 : Development and design.",
+        "phase_3": "Phase 3 : Bug fix and production launch.",
+        "phase_4": "The tight deadline.",
+        "phase_5": "The learning of a new programming langugage (C#).",
+        "phase_6": "The first time working with git.",
+        "phase_7": "The coordination of people, especially between developer and designer."
+    },
+    "experience_snapo": {
+        "p": "Despite the tight schedule and the inexperience of some team members, we managed to create and functional and enjoyabl egame within the 48-hour timeframe. The game was well-received by the Ludum Dare community, earning positive feedback for its creativity, music and overall atmosphere.\n\nThis experience taught us valuable lessons in teamwork, time management, and rapid prototyping, which we can apply to future projects."
+    }
+}

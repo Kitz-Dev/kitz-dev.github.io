@@ -1,0 +1,35 @@
+$purple: #8C0693;
+$pink: #fa7c91;
+$beige-light: #EEEFEC;
+$grey-light: #BABCAE;
+$grey-dark: #484D57;
+$black: #14161A;
+
+$family-primary: '"Nunito", sans-serif';
+
+// Variantes pour hover (calculées une fois)
+$pink-hover: #fb8fa2;
+$purple-hover: #a307af;
+
+// Variables CSS pour le thème
+[data-theme="dark"] {
+    --bg-primary: #{$black};
+    --bg-secondary: #{$grey-dark};
+    --text-primary: #{$beige-light};
+    --text-secondary: #{$grey-light};
+    --accent-color: #{$pink};
+    --accent-hover: #{$pink-hover};
+    --border-color: #{$grey-dark};
+    --shadow-color: rgba(20, 22, 26, 0.3);
+}
+
+[data-theme="light"] {
+    --bg-primary: #{$beige-light};
+    --bg-secondary: #FFFFFF;
+    --text-primary: #{$black};
+    --text-secondary: #{$grey-dark};
+    --accent-color: #{$purple};
+    --accent-hover: #{$purple-hover};
+    --border-color: #{$grey-light};
+    --shadow-color: rgba(140, 6, 147, 0.15);
+}
