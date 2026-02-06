@@ -1,6 +1,6 @@
 export async function translate(lang) {
-    const enRequest = new Request("../../locales/en.json");
-    const frRequest = new Request("../../locales/fr.json");
+    const enRequest = new Request("/portfolio/locales/en.json");
+    const frRequest = new Request("/portfolio/locales/fr.json");
 
     console.log(navigator.language);
     let response = "";
