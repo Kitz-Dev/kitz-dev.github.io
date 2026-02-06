@@ -56,9 +56,16 @@ if (modal) {
 // Window click listener
 globalThis.addEventListener("click", (e) => {
     if (modal.style.visibility === "visible" && modal.classList.contains("active")) {
-        if (!modal.contains(e.target) && e.target !== openModalBtn && !openModalBtn.contains(e.target)) {
-            modal.style.visibility = "hidden"
-            modal.removeAttribute("class", "active")
+        let clickedOnOpenModalBtn = false;
+        openModalBtn.forEach(button => {
+            if (button.contains(e.target)) {
+                clickedOnOpenModalBtn = true;
+            }
+        });
+
+        if (!modal.contains(e.target) && !clickedOnOpenModalBtn) {
+            modal.style.visibility = "hidden";
+            modal.classList.remove("active");
         }
     }
     if (menu.classList.contains('active') && e.target !== menu && !menu.contains(e.target) && e.target !== ham && !ham.contains(e.target)) {
