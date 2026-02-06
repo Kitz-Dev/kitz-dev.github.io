@@ -919,4 +919,4 @@ class AudioPlayer {
 // 8. Initialisation
 // ============================================
 const player = new AudioPlayer(DOM)
-player.init("../../data/playlist.json", "../../data/library.json")
+player.init("/swiftfox-player/data/playlist.json", "/swiftfox-player/data/library.json")
