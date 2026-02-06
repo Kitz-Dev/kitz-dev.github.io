@@ -2,11 +2,9 @@ export async function translate(lang) {
     const enRequest = new Request("/portfolio/locales/en.json");
     const frRequest = new Request("/portfolio/locales/fr.json");
 
-    console.log(navigator.language);
     let response = "";
     if (lang) {
         response = await fetch(lang === 'fr' ? frRequest : enRequest)
-        console.log(lang)
         const translation = await response.json();
 
         // Déterminer quelle page case-study
@@ -267,7 +265,6 @@ function translateTarget(translation) {
     labels.forEach(label => {
         const element = document.getElementById(label.id);
         if (element) {
-            console.log(`Processing label: ${label.id}`);
             // Trouver le dernier nœud texte et le remplacer
             const lastTextNode = Array.from(element.childNodes).reverse().find(node => node.nodeType === 3);
             if (lastTextNode) {

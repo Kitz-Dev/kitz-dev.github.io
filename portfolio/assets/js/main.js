@@ -346,7 +346,10 @@ function applyTheme(newTheme) {
         document.getElementById("linkedin-aside").setAttribute('src', '/portfolio/img/linkedin-purple.svg');
         document.getElementById("github-footer").setAttribute('src', '/portfolio/img/github-purple.svg');
         document.getElementById("linkedin-footer").setAttribute('src', '/portfolio/img/linkedin-purple.svg');
-        document.getElementById("bash").setAttribute('src', '/portfolio/img/bash-light.svg');
+        // Vérification de la page pour le logo qui n'apparaît que sur index
+        if (window.location.pathname.includes('index')) {
+            document.getElementById("bash").setAttribute('src', '/portfolio/img/bash-light.svg');
+        }
         document.querySelectorAll(".line").forEach(line => line.style.stroke = "#8C0693");
         document.getElementById("menu-expand-right-aside").setAttribute('src', '/portfolio/img/menu-expand-right-purple.svg');
     } else if (newTheme === 'dark') {
