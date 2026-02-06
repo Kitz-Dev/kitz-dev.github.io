@@ -67,7 +67,6 @@ class PlaylistService {
     }
 
 
-    // TODO : Link library to UI/UX
     async loadLibrary(libraryUrl) {
         const res = await fetch(libraryUrl)
         if (!res.ok) {
@@ -534,7 +533,6 @@ class LibraryController {
         })
     }
 
-    // TODO : Fix animation au changement de playlist
     attachPlaylistCardEvents(playlistCard, playlist) {
         playlistCard.addEventListener("click", () => {
             const playlistId = playlist.id
