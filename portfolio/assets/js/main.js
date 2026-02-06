@@ -340,25 +340,25 @@ function applyTheme(newTheme) {
     localStorage.setItem('theme', newTheme);
 
     if (newTheme === 'light') {
-        document.getElementById("home-logo").setAttribute('src', '../../img/R-logo-purple-flat.svg');
-        document.getElementById("scroll-to-top").setAttribute('src', '../../img/top-arrow-logo-purple.svg');
-        document.getElementById("github-aside").setAttribute('src', '../../img/github-purple.svg');
-        document.getElementById("linkedin-aside").setAttribute('src', '../../img/linkedin-purple.svg');
-        document.getElementById("github-footer").setAttribute('src', '../../img/github-purple.svg');
-        document.getElementById("linkedin-footer").setAttribute('src', '../../img/linkedin-purple.svg');
-        document.getElementById("bash").setAttribute('src', '../../img/bash-light.svg');
+        document.getElementById("home-logo").setAttribute('src', '/portfolio/img/R-logo-purple-flat.svg');
+        document.getElementById("scroll-to-top").setAttribute('src', '/portfolio/img/top-arrow-logo-purple.svg');
+        document.getElementById("github-aside").setAttribute('src', '/portfolio/img/github-purple.svg');
+        document.getElementById("linkedin-aside").setAttribute('src', '/portfolio/img/linkedin-purple.svg');
+        document.getElementById("github-footer").setAttribute('src', '/portfolio/img/github-purple.svg');
+        document.getElementById("linkedin-footer").setAttribute('src', '/portfolio/img/linkedin-purple.svg');
+        document.getElementById("bash").setAttribute('src', '/portfolio/img/bash-light.svg');
         document.querySelectorAll(".line").forEach(line => line.style.stroke = "#8C0693");
-        document.getElementById("menu-expand-right-aside").setAttribute('src', '../../img/menu-expand-right-purple.svg');
+        document.getElementById("menu-expand-right-aside").setAttribute('src', '/portfolio/img/menu-expand-right-purple.svg');
     } else if (newTheme === 'dark') {
-        document.getElementById("home-logo").setAttribute('src', '../../img/R-logo-pink-flat.svg');
-        document.getElementById("scroll-to-top").setAttribute('src', '../../img/top-arrow-logo.svg');
-        document.getElementById("github-aside").setAttribute('src', '../../img/github.svg');
-        document.getElementById("linkedin-aside").setAttribute('src', '../../img/linkedin.svg');
-        document.getElementById("github-footer").setAttribute('src', '../../img/github.svg');
-        document.getElementById("linkedin-footer").setAttribute('src', '../../img/linkedin.svg');
-        document.getElementById("bash").setAttribute('src', '../../img/bash_dark.svg');
+        document.getElementById("home-logo").setAttribute('src', '/portfolio/img/R-logo-pink-flat.svg');
+        document.getElementById("scroll-to-top").setAttribute('src', '/portfolio/img/top-arrow-logo.svg');
+        document.getElementById("github-aside").setAttribute('src', '/portfolio/img/github.svg');
+        document.getElementById("linkedin-aside").setAttribute('src', '/portfolio/img/linkedin.svg');
+        document.getElementById("github-footer").setAttribute('src', '/portfolio/img/github.svg');
+        document.getElementById("linkedin-footer").setAttribute('src', '/portfolio/img/linkedin.svg');
+        document.getElementById("bash").setAttribute('src', '/portfolio/img/bash_dark.svg');
         document.querySelectorAll(".line").forEach(line => line.style.stroke = "#fa7c91");
-        document.getElementById("menu-expand-right-aside").setAttribute('src', '../../img/menu-expand-right.svg');
+        document.getElementById("menu-expand-right-aside").setAttribute('src', '/portfolio/img/menu-expand-right.svg');
     }
 
     // Synchroniser les deux checkboxes
