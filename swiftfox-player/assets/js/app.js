@@ -276,7 +276,7 @@ class UIController {
     updatePlayButton(isPlaying) {
         const icon = isPlaying ? "pause-button" : "play-button"
         const tooltip = isPlaying ? "Pause" : "Play"
-        this.dom.playButtonImg.setAttribute("href", `../img/sprite.svg#${icon}`)
+        this.dom.playButtonImg.setAttribute("href", `/swiftfox-player/img/sprite.svg#${icon}`)
         this.dom.playTooltip.textContent = tooltip
     }
 
@@ -326,7 +326,7 @@ class UIController {
         } else {
             icon = "high-volume"
         }
-        this.dom.volumeButtonImg.setAttribute("href", `../img/sprite.svg#${icon}`)
+        this.dom.volumeButtonImg.setAttribute("href", `/swiftfox-player/img/sprite.svg#${icon}`)
     }
 
     updateVolumeBar(volume) {
