@@ -637,7 +637,7 @@ class LibraryController {
 
     createLibraryCard(library) {
         const libraryCard = document.createElement("div")
-        const coverImage = this.createCoverImage("../fox-corpo-icon.webp")
+        const coverImage = this.createCoverImage(library.cover)
         const newWrapper = this.createPlaylistTitleWrapper(library)
         libraryCard.setAttribute("class", "playlist-card")
         libraryCard.appendChild(coverImage)
