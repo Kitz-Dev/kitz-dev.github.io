@@ -275,7 +275,7 @@ class UIController {
     updatePlayButton(isPlaying) {
         const icon = isPlaying ? "pause-button" : "play-button"
         const tooltip = isPlaying ? "Pause" : "Play"
-        this.dom.playButtonImg.setAttribute("href", `./img/sprite.svg#${icon}`)
+        this.dom.playButtonImg.setAttribute("href", `/swiftfox-player/img/sprite.svg#${icon}`)
         this.dom.playTooltip.textContent = tooltip
     }
 
@@ -325,7 +325,7 @@ class UIController {
         } else {
             icon = "high-volume"
         }
-        this.dom.volumeButtonImg.setAttribute("href", `../../img/sprite.svg#${icon}`)
+        this.dom.volumeButtonImg.setAttribute("href", `/swiftfox-player/img/sprite.svg#${icon}`)
     }
 
     updateVolumeBar(volume) {
@@ -917,4 +917,4 @@ class AudioPlayer {
 // 8. Initialisation
 // ============================================
 const player = new AudioPlayer(DOM)
-player.init("../../data/playlist.json", "../../data/library.json")
+player.init("/swiftfox-player/data/playlist.json", "/swiftfox-player/data/library.json")
