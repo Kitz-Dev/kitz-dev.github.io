@@ -3,6 +3,14 @@
  * =============================== */
 
 @font-face {
+    font-family: 'Alkatra';
+    src: url('../../fonts/Alkatra-Regular.woff2') format('woff2');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'DMSans';
     src: url('../../fonts/DMSans-VariableFont_opsz\,wght.ttf') format('woff2');
     font-weight: 100 1000;
@@ -32,6 +40,7 @@
     --alt-color: #718096;
 
     /* Font */
+    --primary-font: 'Alkatra', 'system-ui', sans-serif;
     --secondary-font: 'DMSans';
 
     /* Espacements (système cohérent) */
