@@ -198,6 +198,11 @@ aside {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+aside line {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
 
 line {
   stroke: var(--accent-color);

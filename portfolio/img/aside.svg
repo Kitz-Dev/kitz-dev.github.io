@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg">
     <symbol id="aside">
-        <line x1="12" y1="0" x2="12" y2="100vh" stroke="#FA7C91" stroke-width="2">
+        <line x1="12" y1="0" x2="12" y2="100%" stroke="#FA7C91" stroke-width="2">
         </line>
     </symbol>
     <symbol id="aside-mirror-line">
-        <line x1="136" y1="0" x2="136" y2="100vh" stroke="#FA7C91" stroke-width="2">
+        <line x1="136" y1="0" x2="136" y2="100%" stroke="#FA7C91" stroke-width="2">
         </line>
     </symbol>
 </svg>
