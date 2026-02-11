@@ -250,7 +250,7 @@ line {
 
 .aside-menu {
   position: fixed;
-  top: calc(80% - 300px);
+  top: calc(80% - 370px);
   right: 10px;
 }
 
@@ -339,6 +339,9 @@ line {
   }
   .ham {
     display: block;
+  }
+  .aside-menu {
+    top: calc(80% - 300px);
   }
 }
 @media only screen and (max-height: 940px) {
