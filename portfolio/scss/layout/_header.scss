@@ -10,7 +10,13 @@
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
   z-index: 10000;
+  // Fix pour iOS
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .navbar-start {

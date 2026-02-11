@@ -193,6 +193,10 @@ aside {
   display: flex;
   transition: opacity 0.5s ease-in-out;
   background: var(--bg-primary) no-repeat 12px 0px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 line {
@@ -784,7 +788,12 @@ main {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
   z-index: 10000;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .navbar-start {

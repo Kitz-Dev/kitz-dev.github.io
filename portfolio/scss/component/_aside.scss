@@ -10,6 +10,11 @@ aside {
     display: flex;
     transition: opacity 0.5s ease-in-out;
     background: var(--bg-primary) no-repeat 12px 0px;
+    // Fix pour iOS
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 line {
