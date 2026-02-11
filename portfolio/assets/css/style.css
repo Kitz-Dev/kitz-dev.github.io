@@ -194,7 +194,6 @@ aside {
   display: flex;
   transition: opacity 0.5s ease-in-out;
   background: var(--bg-primary) no-repeat 12px 0px;
-  transform: translateZ(0);
 }
 
 line {
@@ -768,6 +767,7 @@ aside {
 
 body {
   background-color: var(--bg-primary);
+  overscroll-behavior-y: contain;
 }
 
 html,
