@@ -194,7 +194,6 @@ aside {
   display: flex;
   transition: opacity 0.5s ease-in-out;
   background: var(--bg-primary) no-repeat 12px 0px;
-  will-change: transform;
 }
 
 line {
@@ -315,6 +314,10 @@ line {
   aside {
     opacity: 0;
     visibility: hidden;
+    height: 100dvh;
+  }
+  aside line {
+    bottom: 0;
   }
   aside.active {
     opacity: 1;
@@ -768,13 +771,6 @@ aside {
 
 body {
   background-color: var(--bg-primary);
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .navbar {

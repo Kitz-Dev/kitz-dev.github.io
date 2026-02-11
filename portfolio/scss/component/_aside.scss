@@ -11,7 +11,6 @@ aside {
     display: flex;
     transition: opacity 0.5s ease-in-out;
     background: var(--bg-primary) no-repeat 12px 0px;
-    will-change: transform;
 }
 
 line {
@@ -142,6 +141,11 @@ line {
     aside {
         opacity: 0;
         visibility: hidden;
+        height: 100dvh;
+
+        line {
+            bottom: 0;
+        }
     }
 
     aside.active {
@@ -154,11 +158,6 @@ line {
             top: calc(100vh - 20vh - 250px);
         }
     }
-
-    // .aside-mirror-wrapper.active {
-    //     opacity: 1;
-    //     visibility: visible;
-    // }
 
     .navbar-item {
         margin: 0 !important;
