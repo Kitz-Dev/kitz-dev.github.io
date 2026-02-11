@@ -601,12 +601,11 @@ table .experience-period-last {
     gap: 10px;
     width: fit-content;
     max-width: fit-content;
-    min-width: -webkit-fill-available;
+    min-width: auto;
   }
   .skillset-item {
     width: fit-content;
     min-width: fit-content;
-    min-width: -webkit-fill-available;
     margin: 0;
   }
   .skillset-item:hover {
