@@ -49,15 +49,15 @@ line {
 }
 
 #github-aside {
-    top: calc(100vh - 20vh + 60px);
+    top: calc(100% - 20% + 60px);
 }
 
 #linkedin-aside {
-    top: calc(100vh - 20vh + 120px);
+    top: calc(100% - 40% + 120px);
 }
 
 #menu-expand-right-aside {
-    top: calc(100vh - 20vh - 370px);
+    top: calc(100% - 20% - 370px);
     right: 118px;
     width: 30px;
     visibility: hidden;
@@ -69,7 +69,7 @@ line {
 
 .aside-menu {
     position: fixed;
-    top: calc(100vh - 20vh - 300px);
+    top: calc(100% - 20% - 300px);
     right: 10px;
 }
 
@@ -160,7 +160,7 @@ line {
 
         #menu-expand-right-aside {
             visibility: visible;
-            top: calc(100vh - 20vh - 250px);
+            // top: calc(100% - 20% - 250px);
         }
     }
 
@@ -179,14 +179,18 @@ line {
 
 @media only screen and (max-height: 940px) {
     #github-aside {
-        top: calc(100vh - 20vh + 0px);
+        top: calc(100% - 20% - 40px);
     }
 
     #linkedin-aside {
-        top: calc(100vh - 20vh + 60px);
+        top: calc(100% - 20% + 10px);
     }
 
     #menu-expand-right-aside {
-        top: calc(100vh - 20vh - 300px);
+        top: calc(100% - 20% - 280px);
+    }
+
+    #aside-theme-lang-wrapper {
+        margin-top: 10px;
     }
 }
