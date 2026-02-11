@@ -4,9 +4,10 @@ body {
     background-color: var(--bg-primary);
 }
 
-// html,
-// body {
-//     height: 100%;
-//     margin: 0;
-//     padding: 0;
-// }
+html,
+body,
+main {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}

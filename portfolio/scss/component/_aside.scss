@@ -141,11 +141,6 @@ line {
     aside {
         opacity: 0;
         visibility: hidden;
-        height: 100dvh;
-
-        line {
-            bottom: 0;
-        }
     }
 
     aside.active {
