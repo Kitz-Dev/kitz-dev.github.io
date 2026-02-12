@@ -443,7 +443,6 @@ input[type="range"]:focus {
 }
 
 .playlists-container {
-    /* ! =================== DISPLAY FLEX POUR AFFICHER =================== */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -452,8 +451,6 @@ input[type="range"]:focus {
 
 #infos-title-container {
     justify-content: center;
-    /* ! Placeholder */
-    visibility: hidden;
 }
 
 .playlists-container h2 {
@@ -757,6 +754,7 @@ input[type="range"]:focus {
     width: 100%;
     height: 100%;
     margin: 0;
+    object-fit: cover;
 }
 
 .infos-title-container {
@@ -774,6 +772,540 @@ h4 {
 
 .infos-genre {
     color: var(--btn-color);
+}
+
+/** ==============================
+ * MEDIA QUERIES - RESPONSIVE
+ * =============================== */
+
+/* Tablettes et écrans moyens (1024px et moins) */
+@media only screen and (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+        gap: 2rem;
+    }
+
+    section {
+        width: 90vw;
+        max-width: 600px;
+    }
+
+    /* Player au centre */
+    .music-player {
+        width: 90vw;
+        max-width: 600px;
+        order: 1;
+    }
+
+    #music-player-container {
+        height: auto;
+        padding: 2rem 1.5rem;
+    }
+
+    /* Libraries de chaque côté en colonne */
+    .library {
+        width: 90vw;
+        max-width: 600px;
+    }
+
+    .library:first-child {
+        order: 2;
+    }
+
+    .library:last-child {
+        order: 3;
+    }
+
+    .library-container {
+        width: 100%;
+    }
+
+    .library-tracks-container {
+        width: 100%;
+        height: 50vh;
+        max-height: 500px;
+    }
+
+    /* Section infos plus grande */
+    .library:last-child .library-tracks-container {
+        height: 60vh;
+        max-height: 600px;
+    }
+
+    /* Ajustements titre */
+    .title-container {
+        width: 100%;
+        padding: 0.5rem 1rem;
+    }
+
+    .infos-cover-container {
+        height: 150px;
+    }
+}
+
+/* Tablettes portrait (768px et moins) */
+@media only screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Album cover réduit */
+    .album-cover {
+        width: 220px;
+        height: 220px;
+        margin: 12px 0;
+    }
+
+    /* Pseudo-éléments du lecteur - correction position */
+    .album-cover-container::before {
+        display: none;
+    }
+
+    .album-cover-container::after {
+        display: none;
+    }
+
+    /* Song title */
+    .song-title-wrapper {
+        width: 280px;
+    }
+
+    .title-display {
+        font-size: 0.95rem;
+    }
+
+    /* Player controls */
+    .player-logic {
+        gap: 12px;
+    }
+
+    .logic-button {
+        width: 36px;
+        height: 36px;
+    }
+
+    #play-button {
+        width: 44px;
+        height: 44px;
+    }
+
+    /* Progress bar ET volume - refonte complète */
+    .progress-bar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0;
+        margin-left: 0;
+    }
+
+    .progress-timer-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .progress-bar {
+        width: 220px;
+    }
+
+    .song-timer {
+        font-size: 0.9rem;
+    }
+
+    /* Volume - nouvelle disposition verticale */
+    .volume-container {
+        display: flex;
+        flex-direction: row-reverse;
+        transform: translateX(22px);
+        align-items: center;
+        margin-top: 0;
+        gap: 0.5rem;
+        position: relative;
+    }
+
+    .volume-bar-container {
+        position: relative;
+        margin-top: 0;
+        width: 220px;
+        height: auto;
+        visibility: visible;
+        display: block;
+    }
+
+    .volume-bar {
+        width: 220px;
+        height: 8px;
+        transform: none;
+        left: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    #volume-button {
+        order: -1;
+        /* Bouton au-dessus de la barre */
+    }
+
+    /* Library tracks */
+    .library-tracks-container {
+        height: 45vh;
+        max-height: 400px;
+    }
+
+    /* Section infos plus grande */
+    .library:last-child .library-tracks-container {
+        height: 55vh;
+        max-height: 550px;
+    }
+
+    .track-card,
+    .playlist-card {
+        height: 55px;
+        padding: 8px;
+        margin: 3px 6px;
+    }
+
+    .track-card img,
+    .playlist-card img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .track-title-wrapper {
+        width: calc(100% - 60px);
+    }
+
+    .track-title {
+        font-size: 0.9rem;
+    }
+
+    /* Infos section */
+    .infos-title-container {
+        padding: 0 12px;
+    }
+
+    .infos-title,
+    .infos-author {
+        font-size: 0.95rem;
+    }
+
+    .infos-genre,
+    .infos-lore {
+        font-size: 0.85rem;
+    }
+
+    .infos-lore {
+        line-height: 1.5;
+    }
+}
+
+/* Smartphones portrait (480px et moins) */
+@media only screen and (max-width: 480px) {
+    main {
+        padding: 0.25rem;
+        gap: 1rem;
+    }
+
+    section {
+        width: 95vw;
+    }
+
+    .music-player,
+    .library {
+        width: 95vw;
+    }
+
+    #music-player-container {
+        padding: 1.5rem 1rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    /* Album cover encore plus petit */
+    .album-cover {
+        width: 180px;
+        height: 180px;
+        margin: 10px 0;
+    }
+
+    /* Pseudo-éléments - correction position */
+    .album-cover-container::before {
+        width: 55px;
+        height: 55px;
+        margin-top: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .album-cover-container::after {
+        width: 11px;
+        height: 11px;
+        margin-top: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Song title */
+    .song-title-wrapper {
+        width: 240px;
+    }
+
+    .title-display {
+        font-size: 0.85rem;
+    }
+
+    /* Player controls compacts */
+    .player-logic {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logic-button {
+        width: 32px;
+        height: 32px;
+    }
+
+    #play-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Progress bar */
+    .progress-bar {
+        width: 180px;
+    }
+
+    .counts-container {
+        min-width: 40px;
+    }
+
+    .song-timer {
+        font-size: 0.8rem;
+    }
+
+    /* Volume */
+    .volume-bar-container {
+        width: 180px;
+    }
+
+    .volume-bar {
+        width: 180px;
+    }
+
+    /* Library */
+    .library-tracks-container {
+        height: 40vh;
+        max-height: 350px;
+    }
+
+    /* Section infos plus grande */
+    .library:last-child .library-tracks-container {
+        height: 50vh;
+        max-height: 500px;
+    }
+
+    .track-card,
+    .playlist-card {
+        height: 50px;
+        padding: 6px;
+        margin: 2px 4px;
+    }
+
+    .track-card img,
+    .playlist-card img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .track-title-wrapper {
+        width: calc(100% - 50px);
+        margin-left: 6px;
+    }
+
+    .track-title {
+        font-size: 0.85rem;
+    }
+
+    /* Infos */
+    .infos-cover-container {
+        height: 125px;
+    }
+
+    .infos-title-container {
+        padding: 0 10px;
+    }
+
+    .infos-title {
+        font-size: 0.9rem;
+    }
+
+    .infos-author,
+    .infos-genre {
+        font-size: 0.8rem;
+    }
+
+    .infos-lore {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+
+    /* Tooltips cachés sur mobile */
+    .tooltip {
+        display: none;
+    }
+
+    /* Title container compact */
+    .title-container {
+        padding: 0.4rem 0.8rem;
+    }
+
+    #tracklist-return-button,
+    #sort-down-button {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Très petits écrans (360px et moins) */
+@media only screen and (max-width: 360px) {
+    .album-cover {
+        width: 150px;
+        height: 150px;
+    }
+
+    .album-cover-container::before {
+        width: 45px;
+        height: 45px;
+        margin-top: 0;
+    }
+
+    .album-cover-container::after {
+        width: 9px;
+        height: 9px;
+        margin-top: 0;
+    }
+
+    .song-title-wrapper {
+        width: 200px;
+    }
+
+    .progress-bar,
+    .volume-bar {
+        width: 160px;
+    }
+
+    .volume-bar-container {
+        width: 160px;
+    }
+
+    .library-tracks-container {
+        height: 35vh;
+    }
+
+    /* Section infos */
+    .library:last-child .library-tracks-container {
+        height: 45vh;
+    }
+
+    .track-title-wrapper {
+        width: calc(100% - 45px);
+    }
+}
+
+/* Mode paysage sur smartphone */
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0.5rem;
+    }
+
+    .music-player {
+        width: 45vw;
+        order: 2;
+    }
+
+    .library:first-child {
+        width: 25vw;
+        order: 1;
+    }
+
+    .library:last-child {
+        width: 25vw;
+        order: 3;
+    }
+
+    #music-player-container {
+        padding: 1rem;
+    }
+
+    .album-cover {
+        width: 140px;
+        height: 140px;
+    }
+
+    .album-cover-container::before {
+        margin-top: 0;
+    }
+
+    .album-cover-container::after {
+        margin-top: 0;
+    }
+
+    .library-tracks-container {
+        height: 70vh;
+    }
+
+    /* Section infos en paysage */
+    .library:last-child .library-tracks-container {
+        height: 75vh;
+    }
+
+    .player-logic {
+        gap: 10px;
+    }
+
+    /* Progress et volume en paysage */
+    .progress-bar-container {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .volume-container {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    #volume-button {
+        order: 0;
+    }
+
+    .volume-bar-container {
+        width: 100px;
+    }
+
+    .volume-bar {
+        width: 100px;
+    }
 }
 
 /* TODO : Add touch support for volume button
