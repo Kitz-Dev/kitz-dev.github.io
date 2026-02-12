@@ -778,8 +778,12 @@ h4 {
  * MEDIA QUERIES - RESPONSIVE
  * =============================== */
 
-/* Tablettes et écrans moyens (1024px et moins) */
+/* Tablettes et écrans moyens (1200px et moins) */
 @media only screen and (max-width: 1200px) {
+    body {
+        background-size: cover;
+    }
+
     main {
         flex-direction: column;
         align-items: center;
