@@ -3,7 +3,7 @@
 
 .navlogo img,
 #scroll-to-top {
-    width: calc(48px + 2vw);
+    width: 86px;
 }
 
 #scroll-to-top {
@@ -19,4 +19,20 @@
 #scroll-to-top:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .navlogo img,
+    #scroll-to-top {
+        max-width: 86px;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+
+    .navlogo img,
+    #scroll-to-top {
+        max-width: 64px;
+    }
 }
